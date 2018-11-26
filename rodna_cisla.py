@@ -10,7 +10,7 @@ Napiš i testy, abys ověřila, že funkce fungují správně.
 Pro účely úkolu stačí, když bude program umět zpracovat čísla vydávaná od roku 1985. Reálná rodná čísla můžou být složitější :)
 '''
 from datetime import date
-rc=input('Zadej sve rodne cislo s lomitkem: ') #'915303/0458' 920804/0028
+rc=input('Zadej sve rodne cislo s lomitkem: ')
 #print(rc)
 
 
@@ -72,7 +72,7 @@ print(datum(rc))
 def pohlavi(rc):
     mes_pre=rc[2:4]
     mes_pre=int(mes_pre)
-    #print(mes_pre)
+    
     if mes_pre>50:
         pohlavi='zena'
     else:
@@ -81,7 +81,3 @@ def pohlavi(rc):
     return pohlavi
 
 print(pohlavi(rc))
-
-
-
-#delitelnost(rc)
